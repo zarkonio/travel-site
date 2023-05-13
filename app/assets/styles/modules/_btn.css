@@ -1,0 +1,23 @@
+/* ako naziv fajla pocnemo sa _ to drugim developerima daje naznaku da ce fajl biti deo necega, importovace se, nece biti samostalan */
+/* & zamenjuje naziv kontejnera u kom je klasa */
+
+.btn {
+  background-color: $mainBlue;
+  color: #fff;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+
+  &--orange {
+    background-color: $mainOrange;
+  }
+
+  &--large {
+    font-size: 1rem;
+    padding: 1.1rem 1.9rem;
+
+    @mixin atSmall {       /* za ekrane sirine 530px i vece */
+      font-size: 1.25rem;
+    }
+  }
+}

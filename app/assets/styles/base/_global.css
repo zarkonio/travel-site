@@ -1,0 +1,19 @@
+/* ako naziv fajla pocnemo sa _ to drugim developerima daje naznaku da ce fajl biti deo necega, importovace se, nece biti samostalan */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%; /* no images should be larger than the window or the container in which it resides unless specified */
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {                      /* svi linkovi */
+  color: $mainOrange;
+}

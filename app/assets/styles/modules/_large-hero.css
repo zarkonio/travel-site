@@ -1,0 +1,71 @@
+/* ako naziv fajla pocnemo sa _ to drugim developerima daje naznaku da ce fajl biti deo necega, importovace se, nece biti samostalan */
+/* & zamenjuje naziv kontejnera u kom je klasa */
+.large-hero {
+  border-bottom: 10px solid $mainBlue;
+  position: relative;
+
+  &__image {
+    display: block;
+  }
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* 50% od svoje visine */ 
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 300;
+    color: $mainBlue;
+    margin: 0;
+    font-size: 2.4rem; /* za mobile first approach 1.1rem je za najuze ekrane - uze od 530px */
+
+    @mixin atSmall {   /* za ekrane sirine 530px i vece */
+      font-size: 4.8rem;
+    }
+
+    /* za ekrane sirine 800px i vece
+    @mixin atMedium {   
+      font-size: 3.2rem;
+    }
+
+   za ekrane sirine vece od 1200px 
+    @mixin atLarge {   
+      font-size: 4.8rem;
+    }
+    */
+  }
+  
+  &__subtitle {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 1.5rem;
+    margin: 0;
+
+    @mixin atSmall {      /* za ekrane sirine 530px i vece */
+      font-size: 2.9rem;
+    }
+
+  }
+
+  &__description {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin atSmall {    /* za ekrane sirine 530px i vece */
+      font-size: 1.875rem;
+    }
+  }
+
+}
+
+
+

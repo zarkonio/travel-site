@@ -1,0 +1,14 @@
+/* padding za svaki section html stranice. na ovaj nacin imacemo isti padding tj. prazan prostor medju sekcijama */
+.page-section {
+
+  padding: 1.2rem 0;
+
+  @mixin atMedium {
+    padding: 4.5rem 0; 
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+    color: #fff;
+  }
+}

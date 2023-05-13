@@ -1,0 +1,13 @@
+/* ovaj fajl ce biti cvor ostalih css fajlova */
+@import 'normalize.css'; /* normalize.css smo kao modul dodali u fajl package.json i on standardizuje izgled sajta za sve browsere (margin: 0, padding: 0 itd) */
+@import 'base/_variables';
+@import 'base/_global';
+@import 'base/_mixins';
+@import 'modules/_large-hero';
+@import 'modules/_btn';
+@import 'modules/_wrapper';
+@import 'modules/_page-section';
+@import 'modules/_headline';
+@import 'modules/_row';
+@import 'modules/_generic-content-container';
+
