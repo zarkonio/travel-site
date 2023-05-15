@@ -11,6 +11,7 @@
   &__text-content {
     position: absolute;
     top: 50%;
+    padding-top: 60px;
     transform: translateY(-50%); /* 50% od svoje visine */ 
     left: 0;
     width: 100%;
