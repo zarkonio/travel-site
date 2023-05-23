@@ -10,7 +10,12 @@
   }
 
   @mixin atMedium {
+    position: fixed; /* zakljucace el na vrh ekrana cak i dok skrolujemo dok smo na vecem ekranu */
     background-color: rgba($mainBlue, .3); /* umesto background-color: rgba(47, 85, 114, .3); - instalirali smo plugin postcsshexrgba i dodali u webpack */
+  
+    &--dark {
+      background-color: rgba(23, 51, 72, .85); /* klasa za potamljivanje headera kad se skroluje dole na vecim ekranima */
+    }
   }
 
   &__btn-container {
@@ -27,11 +32,16 @@
     transform-origin: 50% 0;
     background-color: $mainBlue;
     padding: 25px 36px;
+    transition: transform .3s ease-out;
 
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
       /* padding: 25px 36px; */
+
+      .site-header--dark & {    /* targetuje logo element kada se koristi klasa site-header--dark */
+        transform: scale(.54);
+      }
     }
   }
 

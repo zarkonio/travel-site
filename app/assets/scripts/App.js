@@ -2,6 +2,7 @@ import '../styles/styles.css';
 // import Person from './modules/Person';  // .js nije neophodno
 import MobileMenu from './modules/MobileMenu'; // .js nije neophodno
 import RevealOnScroll from './modules/RevealOnScroll'; // .js nije neophodno
+import StickyHeader from './modules/StickyHeader'; // .js nije neophodno
 
 // alert("Hello, this is just a testtmm");
 if(module.hot){
@@ -44,6 +45,8 @@ let jane = new Adult("Jane Smith", 'green');
 jane.greet();
 jane.payTaxes();
 */
+
+let stickyHeader = new StickyHeader()
 
 let mobileMenu = new MobileMenu();
 // let revealOnScroll = new RevealOnScroll();
