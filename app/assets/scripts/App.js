@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+import 'lazysizes'
 // import Person from './modules/Person';  // .js nije neophodno
 import MobileMenu from './modules/MobileMenu'; // .js nije neophodno
 import RevealOnScroll from './modules/RevealOnScroll'; // .js nije neophodno
