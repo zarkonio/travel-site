@@ -5,7 +5,6 @@ import MobileMenu from './modules/MobileMenu'; // .js nije neophodno
 import RevealOnScroll from './modules/RevealOnScroll'; // .js nije neophodno
 import StickyHeader from './modules/StickyHeader'; // .js nije neophodno
 
-
 // alert("Hello, this is just a testtmm");
 if(module.hot){
   module.hot.accept() // ako ima smisla prihvati
