@@ -4,6 +4,7 @@ import 'lazysizes'
 import MobileMenu from './modules/MobileMenu'; // .js nije neophodno
 import RevealOnScroll from './modules/RevealOnScroll'; // .js nije neophodno
 import StickyHeader from './modules/StickyHeader'; // .js nije neophodno
+import ClientArea from './modules/ClientArea'; // .js nije neophodno
 
 // alert("Hello, this is just a testtmm");
 if(module.hot){
@@ -75,3 +76,4 @@ document.querySelectorAll('.open-modal').forEach(el => { // ima vise (tri) dugmi
 
 // webpackChunkName: "modal" znaci da se preimenuje bundle.js fajl u modal.bundle.js
 
+new ClientArea() // // ovaj obj ce generisati html na dnu index.html stranice (formu) koji ce poslati na bekend (na cloud fju secret-area.js) podatak
