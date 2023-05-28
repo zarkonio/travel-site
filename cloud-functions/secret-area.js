@@ -14,7 +14,7 @@
 //     body: JSON.stringify({ message: "Hello World" }),
 //   };
 // };
-
+/*
 exports.handler = function(event, context, callback){
   const secretContent = `
     <h3>Welcome To The Secret Area</h3>
@@ -40,6 +40,39 @@ exports.handler = function(event, context, callback){
     })
   }
 }
+*/
+
+exports.handler = async function (event, context) {
+  // return {
+  //   statusCode: 200,
+  //   body: JSON.stringify({ message: "Hello World" }),
+  // };
+
+
+  const secretContent = `
+    <h3>Welcome To The Secret Area</h3>
+    <p>Here we can tell you that sky is <strong>blue</strong> and two plus two equals four.</p>
+  `
+
+  let body
+
+  if(event.body){
+    body = JSON.parse(event.body)
+  } else {
+    body = {}
+  }
+
+  if(body.password == "javascript") {
+    return  {
+      statusCode: 200,
+      body: secretContent
+    }
+  } else {
+    return {
+      statusCode: 401  // unautorized
+    }
+  }
+};
 
 // u praksi je dobro da github repo na koji pushujemo bude private a ne public ako radimo na bekendu tj. na cloud functionima
 // za front end manje vise
